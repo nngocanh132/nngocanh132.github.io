@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model Example</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 80px;
+      text-align: center;
+      line-height: 80px;
+      font-family: Arial;
+      display: inline-block; 
+      background-color: lightblue;
+    }
+
+    .padding-box {
+      padding: 20px;             
+      background-color: lightgreen;
+    }
+
+    .border-box {
+      border: 5px solid blue;   
+      background-color: lightcoral;
+    }
+
+    .margin-box {
+      margin: 20px;              
+      background-color: gold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Padding vs Border vs Margin</h2>
+
+  <div class="box padding-box">Padding</div>
+  <div class="box border-box">Border</div>
+  <div class="box margin-box">Margin</div>
+
+</body>
+</html>
