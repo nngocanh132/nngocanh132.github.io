@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exercise 3 – Grades</title>
+<style>tr:nth-child(even){background:#eee}</style>
+</head>
+<body>
+<table>
+<tr><th>Subject</th><th>Grade ® § ≥</th></tr>
+<tr><td>Math</td><td class="g">8</td></tr>
+<tr><td>Physics</td><td class="g">7</td></tr>
+<tr><td>Chemistry</td><td class="g">9</td></tr>
+<tr><td>English</td><td class="g">8</td></tr>
+</table>
+<button onclick="calculateAverage()">Calculate Average</button>
+<p id="avg"></p>
+<script>
+function calculateAverage(){let s=0;document.querySelectorAll('.g').forEach(x=>s+=+x.textContent);avg.textContent='Average: '+s/4}
+</script>
+</body>
+</html>

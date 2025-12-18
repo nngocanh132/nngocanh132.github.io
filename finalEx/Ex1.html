@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exercise 1 – User Registration</title>
+<style>
+form { display: flex; flex-direction: column; gap: 10px; width: 300px; }
+.strength { font-weight: bold; }
+</style>
+</head>
+<body>
+<h2>User Registration</h2>
+<form>
+<input type="text" placeholder="Username (5–15 chars)">
+<input type="password" id="pwd" placeholder="Password" oninput="checkStrength()">
+<span id="s" class="strength"></span>
+<input type="file" accept=".jpg,.png">
+</form>
+<script>
+function checkStrength() {
+const p = pwd.value;
+s.textContent = p.length < 6 ? 'Weak' : (/[0-9]/.test(p)&&/[a-z]/i.test(p)?'Strong':'Medium');
+}
+</script>
+</body>
+</html>
