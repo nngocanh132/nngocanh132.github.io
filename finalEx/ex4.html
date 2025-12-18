@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Exercise 4 – Menu</title></head>
+<body>
+<button onclick="filterMenu()">Filter Vegetarian</button>
+<ul>
+<li class="i veg">Salad $5</li>
+<li class="i">Steak $15</li>
+<li class="i veg">Veg Pizza $10</li>
+<li class="i">Soup $7</li>
+</ul>
+<script>
+let v=false;function filterMenu(){v=!v;for(let x of document.getElementsByClassName('i'))x.style.display=v&&!x.classList.contains('veg')?'none':'list-item'}
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Exercise 5 – Tabs</title>
+<style>.tab{border:1px solid #333;padding:6px;cursor:pointer}.a{background:#333;color:#fff}</style>
+</head>
+<body>
+<span class="tab a" onclick="switchTab(0)">Features →</span>
+<span class="tab" onclick="switchTab(1)">Pricing →</span>
+<span class="tab" onclick="switchTab(2)">Reviews →</span>
+<span class="tab" onclick="switchTab(3)">Support →</span>
+<p id="c">Features content</p>
+<script>
+function switchTab(i){const t=document.getElementsByClassName('tab');for(let x of t)x.classList.remove('a');t[i].classList.add('a');c.textContent=t[i].textContent+' content'}
+</script>
+</body>
+</html>
